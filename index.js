@@ -1,3 +1,4 @@
+// temperature check
 function classifyTemperature(temp) {
   if (temp < 0) {
     return "Freezing";
