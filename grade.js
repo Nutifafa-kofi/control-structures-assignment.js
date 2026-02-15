@@ -1,7 +1,10 @@
 // Grade Calculator
 function calculateGrade(score) {
   // if score is less than zero and score is greater than hundred, return invalid score
-  if (score < 0 && score > 100) {
+  if (score < 0) {
+    return "Invalid score";
+  }
+  if (score > 100) {
     return "Invalid score";
   }
 
@@ -30,3 +33,12 @@ function calculateGrade(score) {
     return "F";
   }
 }
+
+console.log(calculateGrade(95));
+console.log(calculateGrade(73));
+console.log(calculateGrade(105));
+
+// my output test code
+console.log(calculateGrade(5));
+console.log(calculateGrade(63));
+console.log(calculateGrade(82));
