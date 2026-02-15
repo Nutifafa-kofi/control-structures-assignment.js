@@ -1,14 +1,27 @@
-// temperature check
+// temperature classifier
 function classifyTemperature(temp) {
+  // if temp is less than zero, return freezing
   if (temp < 0) {
     return "Freezing";
-  } else if (temp <= 10) {
+  }
+
+  // if temp is zero to ten, return cold
+  else if (temp <= 10) {
     return "Cold";
-  } else if (temp <= 20) {
+  }
+
+  // if temp is 11 to 20, return cool
+  else if (temp <= 20) {
     return "Cool";
-  } else if (temp <= 30) {
+  }
+
+  // if temp is 21 to 31, return warm
+  else if (temp <= 30) {
     return "Warm";
-  } else {
+  }
+
+  // otherwise, return hot
+  else {
     return "Hot";
   }
 }
@@ -16,3 +29,8 @@ function classifyTemperature(temp) {
 console.log(classifyTemperature(-5));
 console.log(classifyTemperature(15));
 console.log(classifyTemperature(32));
+
+// my ouput test code
+console.log(classifyTemperature(15));
+console.log(classifyTemperature(21));
+console.log(classifyTemperature(55));
