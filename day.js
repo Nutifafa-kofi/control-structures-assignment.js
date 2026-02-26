@@ -1,7 +1,7 @@
-// function to return name of a day based on a number
+// function to return name of the day based on a number
 
-function getDayName(dayName) {
-  switch (dayName) {
+function getDayName(dayNumber) {
+  switch (dayNumber) {
     // if number is 1, then dayName is Monday
     case 1:
       return "Monday";
